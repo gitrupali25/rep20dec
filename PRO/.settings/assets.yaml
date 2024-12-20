@@ -25,6 +25,12 @@ resources:
         type: testRecsession
       - path: /PRO/kipedia_org_e49.ma
         type: test#moeb.applicationPackage
+  - name: dsfortest.csv
+    type: com.ibm.rational.test.lt.datapool
+    dependencies: 
+      - path: /PRO/dsfortest.csv.metadata
+        type: datasetMetadata
+  - name: dsfortest.csv.metadata
   - name: kipedia_org_e49.ma
     type: moeb.applicationPackage
   - name: src
